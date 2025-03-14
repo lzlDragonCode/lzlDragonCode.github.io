@@ -148,15 +148,16 @@ next.addEventListener('click', function () {
 artList.addEventListener('click', function (event) {
   if (event.target.tagName === "I") {
     const id = event.target.parentNode.dataset.id
-    // console.log(id)
+    // console.log("id", id)
     if (event.target.classList.contains("del")) {
       // console.log("delete")
       axios({
         method: "DELETE",
         url: `/v1_0/mp/articles/${id}`,
       }).then(function (response) {
-        // 4.5 删除最后一页的最后一条，需要自动向前翻页
-        if (queryObject.page >= Math.ceil(totalCount / queryObject.per_page)) {
+        // console.log(response)
+        // 4.5 删除最后一页的最后一条，需要自动向前翻页,这里是大于，不是大于等于
+        if (queryObject.page > Math.ceil(totalCount / queryObject.per_page)) {
           queryObject.page--
         }
         getList(queryObject)
