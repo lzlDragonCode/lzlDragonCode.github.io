@@ -157,6 +157,7 @@ artList.addEventListener('click', function (event) {
       }).then(function (response) {
         // console.log(response)
         // 4.5 删除最后一页的最后一条，需要自动向前翻页,这里是大于，不是大于等于
+        console.log(Math.ceil(totalCount / queryObject.per_page))
         if (queryObject.page > Math.ceil(totalCount / queryObject.per_page)) {
           queryObject.page--
         }
