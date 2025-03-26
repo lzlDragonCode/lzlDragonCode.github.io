@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkgeekideas"]=self["webpackChunkgeekideas"]||[]).push([[394],{45:function(e,n,t){t.r(n),t.d(n,{default:function(){return l}});var s=function(){var e=this;e._self._c;return e._m(0)},a=[function(){var e=this,n=e._self._c;return n("div",{staticClass:"box"},[n("h1",[e._v("404 Not Find")]),n("h1",[e._v("功能还未开发")]),n("h1",[n("span",[e._v("极客创想")]),e._v("期待你的加入")])])}],i={name:"NotFind",created(){console.log("notfind组件created")}},r=i,u=t(656),c=(0,u.A)(r,s,a,!1,null,"23bab3f9",null),l=c.exports}}]);
+//# sourceMappingURL=group-03.48e55925.js.map
